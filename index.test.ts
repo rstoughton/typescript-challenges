@@ -32,8 +32,8 @@ describe('chunk', () => {
   })
 
   it('returns a single chunk if the array is smaller or equal to the given size', () => {
-    const size1 = 2
-    const size2 = 3
+    const size1 = 3
+    const size2 = 4
     const before = [1, 2, 3]
     const after = [[1, 2, 3]]
     expect(chunk(before, size1)).toEqual(after)
