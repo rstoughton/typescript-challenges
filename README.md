@@ -27,3 +27,9 @@ In case this helps you with debugging or something
 ```
 npm run dev
 ```
+
+## Solutions
+
+```
+git checkout solutions
+```
