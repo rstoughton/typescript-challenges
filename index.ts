@@ -6,7 +6,7 @@ export const sumValues = (numbers: number[]) =>
   numbers.reduce((prev, current) => prev + current, 0)
 
 // 3. Write a function called `addOrRemove` that adds an item to an array if it doesn't already exist, and removes it if not.
-// The array can be heterogeneous, but only contain primitive values.
+//    The array can be heterogeneous, but only contain primitive values.
 export const addOrRemove = <T extends Array<number | string | boolean>>(
   item: T[number],
   arr: T
@@ -102,11 +102,8 @@ export const memoize = <T extends (...args: Parameters<T>) => ReturnType<T>>(
   return (...args: Parameters<T>) => {
     const stringifiedArgs = JSON.stringify(args)
     if (cache[stringifiedArgs]) {
-      console.log('cache: ', cache)
-      console.log('args: ', stringifiedArgs)
       return cache[stringifiedArgs]
     } else {
-      console.log('fresh args: ', args)
       const result = fn(...args)
       cache[stringifiedArgs] = result
       return result
