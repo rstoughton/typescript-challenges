@@ -3,7 +3,7 @@ export const compact = () => {}
 
 // 2. Write function called `sumValues` to calculate the sum of all the number in an array
 
-// 3. Write a function called `addOrRemove` that adds an item to an array if it doesn't already exist, and removes it if not.
+// 3. Write a function called `addOrRemove` that adds an item to an array if it doesn't already exist, and removes it otherwise.
 //    The array can be heterogeneous, but only contain primitive values.
 
 // 4. Write a function called `chunk` that accepts an array and splits it into groups of length `size`. If the array can't be split evenly, the final chunk will be the remaining elements.
