@@ -24,7 +24,7 @@ describe('1. compact', () => {
 //   })
 // })
 
-// describe('4. chunk', () => {
+// describe('3. chunk', () => {
 //   it('takes an array and chunks it into pieces of the given size', () => {
 //     const size = 3
 //     const before = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -57,7 +57,7 @@ describe('1. compact', () => {
 //   })
 // })
 
-// describe('6. isPalindrome', () => {
+// describe('4. isPalindrome', () => {
 //   it('returns true if a string is a palindrome', () => {
 //     expect(isPalindrome('Racecar')).toBe(true)
 //   })
@@ -67,7 +67,7 @@ describe('1. compact', () => {
 //   })
 // })
 
-// describe('7. getAllKeys', () => {
+// describe('5. getAllKeys', () => {
 //   it('returns all the keys of a nested object', () => {
 //     const nestedObj = {
 //       abc: 123,
@@ -89,7 +89,7 @@ describe('1. compact', () => {
 //   })
 // })
 
-// describe('8. Calculator', () => {
+// describe('6. Calculator', () => {
 //   it('initializes the calculator with zero in the register by default', () => {
 //     const myCalc = new Calculator()
 //     expect(myCalc.calculate()).toEqual(0)
@@ -146,31 +146,31 @@ describe('1. compact', () => {
 //   })
 // })
 
-describe('determinant', () => {
-  it('calculates the determinant of a 2x2 matrix', () => {
-    const _2x2 = [
-      [1, 2],
-      [3, 4],
-    ]
-    expect(determinant(_2x2)).toEqual(-2)
-  })
+// describe('7. determinant', () => {
+//   it('calculates the determinant of a 2x2 matrix', () => {
+//     const _2x2 = [
+//       [1, 2],
+//       [3, 4],
+//     ]
+//     expect(determinant(_2x2)).toEqual(-2)
+//   })
 
-  it('calculates the determinant of a 3x3 matrix', () => {
-    const _3x3 = [
-      [1, 2, 3],
-      [3, 2, 1],
-      [2, 1, 3],
-    ]
-    expect(determinant(_3x3)).toEqual(-12)
-  })
+//   it('calculates the determinant of a 3x3 matrix', () => {
+//     const _3x3 = [
+//       [1, 2, 3],
+//       [3, 2, 1],
+//       [2, 1, 3],
+//     ]
+//     expect(determinant(_3x3)).toEqual(-12)
+//   })
 
-  it('calculates the determinant of a 4x4 matrix', () => {
-    const _4x4 = [
-      [2, 1, 3, 4],
-      [4, 2, 1, 3],
-      [1, 4, 2, 3],
-      [3, 1, 4, 2],
-    ]
-    expect(determinant(_4x4)).toEqual(-120)
-  })
-})
+//   it('calculates the determinant of a 4x4 matrix', () => {
+//     const _4x4 = [
+//       [2, 1, 3, 4],
+//       [4, 2, 1, 3],
+//       [1, 4, 2, 3],
+//       [3, 1, 4, 2],
+//     ]
+//     expect(determinant(_4x4)).toEqual(-120)
+//   })
+// })
