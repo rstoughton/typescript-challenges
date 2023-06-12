@@ -1,40 +1,26 @@
 import {
-  // compact,
+  compact,
   // sumValues,
-  // addOrRemove,
-  determinant,
   // chunk,
-  // arrayDifference,
   // isPalindrome,
   // getAllKeys,
   // Calculator,
-  // sleep,
-  // memoize,
+  // determinant,
 } from './index'
 
-// describe('1. compact', () => {
-//   it('takes an array with falsy values and returns a new array with the falsy values removed', () => {
-//     const before = ['a', false, 0, '', null, undefined, NaN, 'b']
-//     const after = ['a', 'b']
-//     expect(compact(before)).toEqual(after)
-//   })
-// })
+describe('1. compact', () => {
+  it('takes an array with falsy values and returns a new array with the falsy values removed', () => {
+    const before = ['a', false, 0, '', null, undefined, NaN, 'b']
+    const after = ['a', 'b']
+    expect(compact(before)).toEqual(after)
+  })
+})
 
 // describe('2. sumValues', () => {
 //   it('sums the numbers in an array', () => {
 //     expect(sumValues([1, 2, 3])).toEqual(6)
 //     expect(sumValues([0, -1, 2, -3])).toEqual(-2)
 //     expect(sumValues([])).toEqual(0)
-//   })
-// })
-
-// describe('3. addOrRemove', () => {
-//   it("adds an item to an array if it doesn't already exist", () => {
-//     expect(addOrRemove<number>(5, [1, 2, 3, 4])).toEqual([1, 2, 3, 4, 5])
-//   })
-
-//   it('removes an item from an array if it already exists', () => {
-//     expect(addOrRemove<number>(7, [1, 2, 3, 7, 4])).toEqual([1, 2, 3, 4])
 //   })
 // })
 
@@ -68,12 +54,6 @@ import {
 //     const after = [[1, 2, 3]]
 //     expect(chunk(before, size1)).toEqual(after)
 //     expect(chunk(before, size2)).toEqual(after)
-//   })
-// })
-
-// describe('5. arrayDifference', () => {
-//   it('calculates the difference between the first array and all the others', () => {
-//     expect(arrayDifference([1, 2, 3, 4, 5], [2, 3, 9], [5, 7])).toEqual([1, 4])
 //   })
 // })
 
@@ -163,44 +143,6 @@ import {
 //     const myCalc = new Calculator(1)
 //     myCalc.clear()
 //     expect(myCalc.calculate()).toEqual(0)
-//   })
-// })
-
-// describe('9. sleep', () => {
-//   it('awaits the given number of milliseconds before resolving', async () => {
-//     const t1 = Date.now()
-//     await sleep(5)
-//     const t2 = Date.now()
-//     expect(t2).toBeGreaterThanOrEqual(t1 + 5)
-//   })
-// })
-
-// describe('10. memoize', () => {
-//   it('memoizes a given function and returns it', () => {
-//     const mockFn = jest.fn(() => {})
-//     const add = (a: number, b: number) => {
-//       mockFn()
-//       return a + b
-//     }
-//     const memoizedAdd = memoize(add)
-
-//     const res1 = add(1, 2)
-//     const res2 = add(1, 2)
-//     const res3 = add(3, 4)
-//     expect(res1).toEqual(3)
-//     expect(res2).toEqual(3)
-//     expect(res3).toEqual(7)
-//     expect(mockFn).toHaveBeenCalledTimes(3)
-
-//     mockFn.mockClear()
-
-//     const memoRes1 = memoizedAdd(1, 2)
-//     const memoRes2 = memoizedAdd(1, 2)
-//     const memoRes3 = memoizedAdd(3, 4)
-//     expect(memoRes1).toEqual(3)
-//     expect(memoRes2).toEqual(3)
-//     expect(memoRes3).toEqual(7)
-//     expect(mockFn).toHaveBeenCalledTimes(2)
 //   })
 // })
 
