@@ -1,7 +1,8 @@
 import {
-  compact,
+  // compact,
   // sumValues,
   // addOrRemove,
+  determinant,
   // chunk,
   // arrayDifference,
   // isPalindrome,
@@ -29,11 +30,11 @@ import {
 
 // describe('3. addOrRemove', () => {
 //   it("adds an item to an array if it doesn't already exist", () => {
-//     expect(addOrRemove(5, ['a', true, 3])).toEqual(['a', true, 3, 5])
+//     expect(addOrRemove<number>(5, [1, 2, 3, 4])).toEqual([1, 2, 3, 4, 5])
 //   })
 
 //   it('removes an item from an array if it already exists', () => {
-//     expect(addOrRemove(7, ['a', true, 7])).toEqual(['a', true])
+//     expect(addOrRemove<number>(7, [1, 2, 3, 7, 4])).toEqual([1, 2, 3, 4])
 //   })
 // })
 
@@ -202,3 +203,32 @@ import {
 //     expect(mockFn).toHaveBeenCalledTimes(2)
 //   })
 // })
+
+describe('determinant', () => {
+  it('calculates the determinant of a 2x2 matrix', () => {
+    const _2x2 = [
+      [1, 2],
+      [3, 4],
+    ]
+    expect(determinant(_2x2)).toEqual(-2)
+  })
+
+  it('calculates the determinant of a 3x3 matrix', () => {
+    const _3x3 = [
+      [1, 2, 3],
+      [3, 2, 1],
+      [2, 1, 3],
+    ]
+    expect(determinant(_3x3)).toEqual(-12)
+  })
+
+  it('calculates the determinant of a 4x4 matrix', () => {
+    const _4x4 = [
+      [2, 1, 3, 4],
+      [4, 2, 1, 3],
+      [1, 4, 2, 3],
+      [3, 1, 4, 2],
+    ]
+    expect(determinant(_4x4)).toEqual(-120)
+  })
+})
