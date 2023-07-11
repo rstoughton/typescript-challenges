@@ -90,60 +90,60 @@ describe('5. getAllKeys', () => {
 })
 
 describe('6. Calculator', () => {
-//   it('initializes the calculator with zero in the register by default', () => {
-//     const myCalc = new Calculator()
-//     expect(myCalc.calculate()).toEqual(0)
-//   })
+  // it('initializes the calculator with zero in the register by default', () => {
+  //   const myCalc = new Calculator()
+  //   expect(myCalc.calculate()).toEqual(0)
+  // })
 
-//   it('accepts an initializer', () => {
-//     const myCalc = new Calculator(5)
-//     expect(myCalc.calculate()).toEqual(5)
-//   })
+  // it('accepts an initializer', () => {
+  //   const myCalc = new Calculator(5)
+  //   expect(myCalc.calculate()).toEqual(5)
+  // })
 
-//   it('adds', () => {
-//     const myCalc = new Calculator()
-//     myCalc.add(2)
-//     expect(myCalc.calculate()).toEqual(2)
-//   })
+  // it('adds', () => {
+  //   const myCalc = new Calculator()
+  //   myCalc.add(2)
+  //   expect(myCalc.calculate()).toEqual(2)
+  // })
 
-//   it('subtracts', () => {
-//     const myCalc = new Calculator()
-//     myCalc.subtract(2)
-//     expect(myCalc.calculate()).toEqual(-2)
-//   })
+  // it('subtracts', () => {
+  //   const myCalc = new Calculator()
+  //   myCalc.subtract(2)
+  //   expect(myCalc.calculate()).toEqual(-2)
+  // })
 
-//   it('multiplies', () => {
-//     const myCalc = new Calculator(2)
-//     myCalc.multiply(3)
-//     expect(myCalc.calculate()).toEqual(6)
-//   })
+  // it('multiplies', () => {
+  //   const myCalc = new Calculator(2)
+  //   myCalc.multiply(3)
+  //   expect(myCalc.calculate()).toEqual(6)
+  // })
 
-//   it('divides', () => {
-//     const myCalc = new Calculator(8)
-//     myCalc.divide(4)
-//     expect(myCalc.calculate()).toEqual(2)
-//   })
+  // it('divides', () => {
+  //   const myCalc = new Calculator(8)
+  //   myCalc.divide(4)
+  //   expect(myCalc.calculate()).toEqual(2)
+  // })
 
-//   it('has a fluent API', () => {
-//     const myCalc1 = new Calculator()
-//     expect(myCalc1.add(1)).toEqual(myCalc1)
-//     expect(myCalc1.subtract(1)).toEqual(myCalc1)
-//     expect(myCalc1.multiply(1)).toEqual(myCalc1)
-//     expect(myCalc1.divide(1)).toEqual(myCalc1)
-//     expect(myCalc1.clear()).toEqual(myCalc1)
+  // it('has a fluent API', () => {
+  //   const myCalc1 = new Calculator()
+  //   expect(myCalc1.add(1)).toEqual(myCalc1)
+  //   expect(myCalc1.subtract(1)).toEqual(myCalc1)
+  //   expect(myCalc1.multiply(1)).toEqual(myCalc1)
+  //   expect(myCalc1.divide(1)).toEqual(myCalc1)
+  //   expect(myCalc1.clear()).toEqual(myCalc1)
 
-//     const myCalc2 = new Calculator()
-//     const result1 = myCalc2.add(3).subtract(1).multiply(5).divide(2).calculate()
-//     expect(result1).toEqual(5)
-//     const result2 = myCalc2.clear().calculate()
-//     expect(result2).toEqual(0)
-//   })
+  //   const myCalc2 = new Calculator()
+  //   const result1 = myCalc2.add(3).subtract(1).multiply(5).divide(2).calculate()
+  //   expect(result1).toEqual(5)
+  //   const result2 = myCalc2.clear().calculate()
+  //   expect(result2).toEqual(0)
+  // })
 
-//   it('clears the register', () => {
-//     const myCalc = new Calculator(1)
-//     myCalc.clear()
-//     expect(myCalc.calculate()).toEqual(0)
-//   })
+  // it('clears the register', () => {
+  //   const myCalc = new Calculator(1)
+  //   myCalc.clear()
+  //   expect(myCalc.calculate()).toEqual(0)
+  // })
 })
 
 describe('7. determinant', () => {
