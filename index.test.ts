@@ -1,11 +1,11 @@
 import {
   compact,
-  // sumValues,
-  // chunk,
-  // isPalindrome,
-  // getAllKeys,
-  // Calculator,
-  // determinant,
+  sumValues,
+  chunk,
+  isPalindrome,
+  getAllKeys,
+  Calculator,
+  determinant,
 } from './index'
 
 describe('1. compact', () => {
@@ -16,80 +16,80 @@ describe('1. compact', () => {
   })
 })
 
-// describe('2. sumValues', () => {
-//   it('sums the numbers in an array', () => {
-//     expect(sumValues([1, 2, 3])).toEqual(6)
-//     expect(sumValues([0, -1, 2, -3])).toEqual(-2)
-//     expect(sumValues([])).toEqual(0)
-//   })
-// })
+describe('2. sumValues', () => {
+  it('sums the numbers in an array', () => {
+    expect(sumValues([1, 2, 3])).toEqual(6)
+    expect(sumValues([0, -1, 2, -3])).toEqual(-2)
+    expect(sumValues([])).toEqual(0)
+  })
+})
 
-// describe('3. chunk', () => {
-//   it('takes an array and chunks it into pieces of the given size', () => {
-//     const size = 3
-//     const before = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-//     const after = [
-//       [1, 2, 3],
-//       [4, 5, 6],
-//       [7, 8, 9],
-//     ]
-//     expect(chunk(before, size)).toEqual(after)
-//   })
+describe('3. chunk', () => {
+  it('takes an array and chunks it into pieces of the given size', () => {
+    const size = 3
+    const before = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    const after = [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9],
+    ]
+    expect(chunk(before, size)).toEqual(after)
+  })
 
-//   it("leaves the last chunk shorter if the array can't be split evenly", () => {
-//     const size = 3
-//     const before = [1, 2, 3, 4, 5, 6, 7, 8]
-//     const after = [
-//       [1, 2, 3],
-//       [4, 5, 6],
-//       [7, 8],
-//     ]
-//     expect(chunk(before, size)).toEqual(after)
-//   })
+  it("leaves the last chunk shorter if the array can't be split evenly", () => {
+    const size = 3
+    const before = [1, 2, 3, 4, 5, 6, 7, 8]
+    const after = [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8],
+    ]
+    expect(chunk(before, size)).toEqual(after)
+  })
 
-//   it('returns a single chunk if the array is smaller or equal to the given size', () => {
-//     const size1 = 3
-//     const size2 = 4
-//     const before = [1, 2, 3]
-//     const after = [[1, 2, 3]]
-//     expect(chunk(before, size1)).toEqual(after)
-//     expect(chunk(before, size2)).toEqual(after)
-//   })
-// })
+  it('returns a single chunk if the array is smaller or equal to the given size', () => {
+    const size1 = 3
+    const size2 = 4
+    const before = [1, 2, 3]
+    const after = [[1, 2, 3]]
+    expect(chunk(before, size1)).toEqual(after)
+    expect(chunk(before, size2)).toEqual(after)
+  })
+})
 
-// describe('4. isPalindrome', () => {
-//   it('returns true if a string is a palindrome', () => {
-//     expect(isPalindrome('Racecar')).toBe(true)
-//   })
+describe('4. isPalindrome', () => {
+  it('returns true if a string is a palindrome', () => {
+    expect(isPalindrome('Racecar')).toBe(true)
+  })
 
-//   it('returns false if a string is not a palindrome', () => {
-//     expect(isPalindrome('Animal')).toBe(false)
-//   })
-// })
+  it('returns false if a string is not a palindrome', () => {
+    expect(isPalindrome('Animal')).toBe(false)
+  })
+})
 
-// describe('5. getAllKeys', () => {
-//   it('returns all the keys of a nested object', () => {
-//     const nestedObj = {
-//       abc: 123,
-//       xyz: true,
-//       foo: {
-//         bar: {
-//           baz: [4, 5, 6],
-//         },
-//       },
-//     }
-//     const expectedKeys = ['abc', 'xyz', 'foo', 'bar', 'baz', '0', '1', '2']
-//     expect(getAllKeys(nestedObj)).toEqual(expectedKeys)
-//   })
+describe('5. getAllKeys', () => {
+  it('returns all the keys of a nested object', () => {
+    const nestedObj = {
+      abc: 123,
+      xyz: true,
+      foo: {
+        bar: {
+          baz: [4, 5, 6],
+        },
+      },
+    }
+    const expectedKeys = ['abc', 'xyz', 'foo', 'bar', 'baz', '0', '1', '2']
+    expect(getAllKeys(nestedObj)).toEqual(expectedKeys)
+  })
 
-//   it('returns all the keys of a flat object', () => {
-//     const flatObj = { a: 1, b: 2, c: 3 }
-//     const expectedKeys = ['a', 'b', 'c']
-//     expect(getAllKeys(flatObj)).toEqual(expectedKeys)
-//   })
-// })
+  it('returns all the keys of a flat object', () => {
+    const flatObj = { a: 1, b: 2, c: 3 }
+    const expectedKeys = ['a', 'b', 'c']
+    expect(getAllKeys(flatObj)).toEqual(expectedKeys)
+  })
+})
 
-// describe('6. Calculator', () => {
+describe('6. Calculator', () => {
 //   it('initializes the calculator with zero in the register by default', () => {
 //     const myCalc = new Calculator()
 //     expect(myCalc.calculate()).toEqual(0)
@@ -144,33 +144,33 @@ describe('1. compact', () => {
 //     myCalc.clear()
 //     expect(myCalc.calculate()).toEqual(0)
 //   })
-// })
+})
 
-// describe('7. determinant', () => {
-//   it('calculates the determinant of a 2x2 matrix', () => {
-//     const _2x2 = [
-//       [1, 2],
-//       [3, 4],
-//     ]
-//     expect(determinant(_2x2)).toEqual(-2)
-//   })
+describe('7. determinant', () => {
+  it('calculates the determinant of a 2x2 matrix', () => {
+    const _2x2 = [
+      [1, 2],
+      [3, 4],
+    ]
+    expect(determinant(_2x2)).toEqual(-2)
+  })
 
-//   it('calculates the determinant of a 3x3 matrix', () => {
-//     const _3x3 = [
-//       [1, 2, 3],
-//       [3, 2, 1],
-//       [2, 1, 3],
-//     ]
-//     expect(determinant(_3x3)).toEqual(-12)
-//   })
+  it('calculates the determinant of a 3x3 matrix', () => {
+    const _3x3 = [
+      [1, 2, 3],
+      [3, 2, 1],
+      [2, 1, 3],
+    ]
+    expect(determinant(_3x3)).toEqual(-12)
+  })
 
-//   it('calculates the determinant of a 4x4 matrix', () => {
-//     const _4x4 = [
-//       [2, 1, 3, 4],
-//       [4, 2, 1, 3],
-//       [1, 4, 2, 3],
-//       [3, 1, 4, 2],
-//     ]
-//     expect(determinant(_4x4)).toEqual(-120)
-//   })
-// })
+  it('calculates the determinant of a 4x4 matrix', () => {
+    const _4x4 = [
+      [2, 1, 3, 4],
+      [4, 2, 1, 3],
+      [1, 4, 2, 3],
+      [3, 1, 4, 2],
+    ]
+    expect(determinant(_4x4)).toEqual(-120)
+  })
+})
